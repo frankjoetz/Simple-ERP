@@ -10,5 +10,5 @@ C:\Users\Lucas\source\repos\ERP Simples para lojas\ERP Simples para lojas\obj\De
 C:\Users\Lucas\source\repos\ERP Simples para lojas\ERP Simples para lojas\obj\Debug\ERP Simples para lojas.exe
 C:\Users\Lucas\source\repos\ERP Simples para lojas\ERP Simples para lojas\obj\Debug\ERP Simples para lojas.pdb
 C:\Users\Lucas\source\repos\ERP Simples para lojas\ERP Simples para lojas\obj\Debug\ERP_Simples_para_lojas.HistoryActivity.resources
-C:\Users\Lucas\source\repos\ERP Simples para lojas\ERP Simples para lojas\obj\Debug\ERP Simples para lojas.csprojAssemblyReference.cache
 C:\Users\Lucas\source\repos\ERP Simples para lojas\ERP Simples para lojas\obj\Debug\ERP_Simples_para_lojas.ClientActivity.resources
+C:\Users\Lucas\source\repos\ERP Simples para lojas\ERP Simples para lojas\obj\Debug\ERP Simples para lojas.csprojAssemblyReference.cache

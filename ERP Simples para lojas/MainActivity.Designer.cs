@@ -32,7 +32,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.hora = new System.Windows.Forms.Label();
             this.data = new System.Windows.Forms.Label();
-            this.sellActivity3 = new ERP_Simples_para_lojas.SellActivity();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.btnSVender = new System.Windows.Forms.Button();
@@ -42,6 +41,7 @@
             this.btnHistorico = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.sellActivity3 = new ERP_Simples_para_lojas.SellActivity();
             this.productsActivity3 = new ERP_Simples_para_lojas.ProductsActivity();
             this.historyActivity1 = new ERP_Simples_para_lojas.HistoryActivity();
             this.clientActivity1 = new ERP_Simples_para_lojas.ClientActivity();
@@ -82,14 +82,6 @@
             this.data.Size = new System.Drawing.Size(36, 14);
             this.data.TabIndex = 7;
             this.data.Text = "Data";
-            // 
-            // sellActivity3
-            // 
-            this.sellActivity3.BackColor = System.Drawing.Color.AliceBlue;
-            this.sellActivity3.Location = new System.Drawing.Point(202, 40);
-            this.sellActivity3.Name = "sellActivity3";
-            this.sellActivity3.Size = new System.Drawing.Size(609, 437);
-            this.sellActivity3.TabIndex = 3;
             // 
             // panel3
             // 
@@ -219,17 +211,25 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // sellActivity3
+            // 
+            this.sellActivity3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.sellActivity3.Location = new System.Drawing.Point(192, 40);
+            this.sellActivity3.Name = "sellActivity3";
+            this.sellActivity3.Size = new System.Drawing.Size(609, 437);
+            this.sellActivity3.TabIndex = 3;
+            // 
             // productsActivity3
             // 
-            this.productsActivity3.BackColor = System.Drawing.Color.AliceBlue;
+            this.productsActivity3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.productsActivity3.Location = new System.Drawing.Point(179, 40);
             this.productsActivity3.Name = "productsActivity3";
-            this.productsActivity3.Size = new System.Drawing.Size(555, 447);
+            this.productsActivity3.Size = new System.Drawing.Size(604, 475);
             this.productsActivity3.TabIndex = 4;
             // 
             // historyActivity1
             // 
-            this.historyActivity1.BackColor = System.Drawing.Color.AliceBlue;
+            this.historyActivity1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.historyActivity1.Location = new System.Drawing.Point(179, 40);
             this.historyActivity1.Name = "historyActivity1";
             this.historyActivity1.Size = new System.Drawing.Size(675, 486);
@@ -237,23 +237,25 @@
             // 
             // clientActivity1
             // 
+            this.clientActivity1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.clientActivity1.Location = new System.Drawing.Point(179, 40);
             this.clientActivity1.Name = "clientActivity1";
-            this.clientActivity1.Size = new System.Drawing.Size(675, 475);
+            this.clientActivity1.Size = new System.Drawing.Size(687, 498);
             this.clientActivity1.TabIndex = 6;
+            this.clientActivity1.Load += new System.EventHandler(this.clientActivity1_Load);
             // 
             // MainActivity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(866, 538);
-            this.Controls.Add(this.sellActivity3);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.productsActivity3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.historyActivity1);
+            this.Controls.Add(this.productsActivity3);
             this.Controls.Add(this.clientActivity1);
+            this.Controls.Add(this.sellActivity3);
+            this.Controls.Add(this.historyActivity1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainActivity";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -279,11 +281,11 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSVender;
-        private SellActivity sellActivity3;
         private ProductsActivity productsActivity3;
         private System.Windows.Forms.Panel SidePanel;
         private HistoryActivity historyActivity1;
         private ClientActivity clientActivity1;
+        private SellActivity sellActivity3;
     }
 }
 

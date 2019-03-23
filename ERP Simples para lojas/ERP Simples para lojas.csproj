@@ -52,6 +52,9 @@
     <Compile Include="ClientActivity.Designer.cs">
       <DependentUpon>ClientActivity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database files\DAL\Connection.cs" />
+    <Compile Include="Database files\DAL\DAOcommands.cs" />
+    <Compile Include="Database files\Model\Control.cs" />
     <Compile Include="HistoryActivity.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,5 +137,6 @@
   <ItemGroup>
     <None Include="Resources\images\sell.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ERP_Simples_para_lojas.Database_files.DAL;
 
 namespace ERP_Simples_para_lojas
 {
     public partial class HistoryActivity : UserControl
     {
+        DAOcommands daoSQL = new DAOcommands();
         public HistoryActivity()
         {
             InitializeComponent();
@@ -24,16 +26,18 @@ namespace ERP_Simples_para_lojas
 
         private void HistoryActivity_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 10; i++)
-            {
-              
-                ListViewItem listView = new ListViewItem("Topolino");
-                listView.SubItems.Add("R$: " + "35,00");
-                listView.SubItems.Add("Kevin Soares");
-                lv_extract.Items.Add(listView);
+            daoSQL.exibirVendas(lv_vendas);
 
-            }
+        }
 
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            daoSQL.removerVendas();
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            daoSQL.exibirVendas(lv_vendas);
         }
     }
 }
