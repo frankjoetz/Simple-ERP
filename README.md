@@ -4,6 +4,8 @@ Simple ERP é como o nome já diz, um ERP Simples com funções básicas, que s�
 Possui uma interface agradável e fácil de se utilizar.
 Foi desenvolvido em C# .NET Framework e SQL Server.
 Seu objetivo é apenas ser utilizado como estudos em programação.
+<b>Ainda segue em desenvolvimento, falta algumas validações e refatoração em algumas partes do código.</b>
+
 <h2> • Funcionalidades e Telas </h2>
 
 - Cadastrar Vendas
